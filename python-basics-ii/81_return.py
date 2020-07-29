@@ -63,3 +63,19 @@ def second_product(number1,number2):
 
 print(second_product(2,3)) # returns the function (sort of):
 #<function second_product.<locals>.second_another_function at 0x00000214E4CE9670>
+
+"""
+hmm... we still aren't getting the result we want!
+We want to print the total, not the function itself!
+
+wait a minute... we didn't call the function when we 
+returned it OR when we printed the other function. 
+"""
+
+# let's try to call the function when we return it!
+def third_product(number1,number2):
+    def third_another_function(number1, number2):
+        return number1 + number2
+    return third_another_function(number1, number2)
+
+print(third_product(2,3))
