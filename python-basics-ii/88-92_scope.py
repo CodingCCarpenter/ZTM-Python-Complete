@@ -52,3 +52,36 @@ Scope rules that python interpreter follows:
     3 - global scope
     4 - build in python functions
 """
+
+# GLOBAL KEYWORD
+abacus = 0
+
+def count():
+    # use the global variable to access any global variables
+    global abacus 
+    # after we have access to it we can use it in our function
+    abacus += 1
+    return abacus
+
+print(count())
+
+"""
+note: 
+    it's arguably cleaner to simply pass a global variable 
+    into a function as an argument, and then create an expression
+    to update the global variable as needed upon function call
+"""
+
+# NONLOCAL KEYWORD
+def outer():
+    x = 'local'
+    def inner():
+        # used to access the parent's local variable
+        nonlocal x
+        # here we are reassigning the parent's local variable value
+        x = 'nonlocal'
+        print('inner:', x)
+    inner()
+    print('outer:', x)
+
+outer()
