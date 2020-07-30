@@ -44,7 +44,7 @@ print(total)
 def product(number1,number2):
     def another_function(number1,number2):
         return number1 + number2
- 
+    
 print(product(2,3)) #returns none
 
 """ 
