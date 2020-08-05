@@ -22,3 +22,17 @@ allows the function to refer to its own data.
 # adding a second player (instance of PlayerCharacter)
 player2 = PlayerCharacter('Krystyne', 'Elf')
 
+# invoke player1's battle_cry
+player1.battle_cry()
+
+# print player2's name
+print(player2.name)
+
+# invoke player2's battle_cry
+player2.battle_cry()
+
+# print player1's role
+print(player1.role)
+
+# add a new player, Tim, who has the role 'human'
+player3 = PlayerCharacter('Tim', 'human')
