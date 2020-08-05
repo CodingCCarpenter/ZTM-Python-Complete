@@ -10,6 +10,9 @@ class PlayerCharacter:
         print('YAAAAAAAAAAARG!!!!')
         return 'done'
 
+    # this is a class object attribute, which is NOT dynamic
+    membership = True
+
 
 # creating a first player (instance of PlayerCharacter)
 player1 = PlayerCharacter('Bacchus', 'Viking', 50)
@@ -20,4 +23,20 @@ player2 = PlayerCharacter('Krystyne', 'Elf', 43)
 # initializing a 3rd player
 player3 = PlayerCharacter('Tim', 'human', 7)
 
+# attributes => pieces of data that are dynamic (name, role, attack)
+# Class Object Attributes => pieces of data that are NOT dynamic
+
+
+
+class PaidPlayer:
+    membership = True
+
+    def __init__(self, name, role, attack):
+        if self.membership:
+            self.name = name
+            self.role = role
+            self.attack = attack
+        else:
+            print('error: you are not authorized to create a character')
+        
 
