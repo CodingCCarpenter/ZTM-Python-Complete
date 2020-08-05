@@ -36,4 +36,17 @@ player2.battle_cry()
 print(player1.role)
 
 # add a new player, Tim, who has the role 'human'
-player3 = PlayerCharacter('Tim', 'human'git )
+player3 = PlayerCharacter('Tim', 'human')
+
+# add a new attribute, 'attack' to player 1 and assign it a value of 50
+player1.attack = 50
+
+# print the attack of player1
+print(player1.attack)
+
+# assign players 2 and 3 their own attack rating
+player2.attack = 41
+player3.attack = 7
+
+print the attack of players 2 and 3
+print(f'player2: {player2.attack}, player3: {player3.attack}')
