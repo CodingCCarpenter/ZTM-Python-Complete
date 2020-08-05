@@ -9,6 +9,7 @@ class PlayerCharacter:
     # custom method that we created
     def battle_cry(self):
         print('YAAAAAAAAAAARG!!!!')
+        return 'done'
 
 # creating a first player
 player1 = PlayerCharacter('Bacchus', 'Viking ')
@@ -35,4 +36,4 @@ player2.battle_cry()
 print(player1.role)
 
 # add a new player, Tim, who has the role 'human'
-player3 = PlayerCharacter('Tim', 'human')
+player3 = PlayerCharacter('Tim', 'human'git )
