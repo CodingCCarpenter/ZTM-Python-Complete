@@ -48,5 +48,5 @@ print(player1.attack)
 player2.attack = 41
 player3.attack = 7
 
-print the attack of players 2 and 3
+# print the attack of players 2 and 3
 print(f'player2: {player2.attack}, player3: {player3.attack}')
