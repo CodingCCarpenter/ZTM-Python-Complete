@@ -10,3 +10,9 @@ class PlayerCharacter:
         print('run')
 
 player1 = PlayerCharacter('Cindy')
+
+"""
+self acts a lot like 'this' in JavaScript. It makes 
+the parameters other than 'self' required, and it 
+allows the function to refer to its own data. 
+"""
