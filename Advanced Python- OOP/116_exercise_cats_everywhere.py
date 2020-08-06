@@ -18,9 +18,8 @@ kermit = Cat('Kermit', 6)
 # 2 Create a function that finds the oldest cat
 cat_ages = [patches.age, thai_chi.age, kermit.age]
 
-def oldest_cat():
-    age_of_oldest = max(cat_ages)
-    return age_of_oldest
+def oldest_cat(*args):
+    return max(args)
 
 # 3 Print out: "The oldest cat is x years old.". x will be the oldest cat age by using the function in #2
 print(f"The oldest cat is {max(cat_ages)} years old")
