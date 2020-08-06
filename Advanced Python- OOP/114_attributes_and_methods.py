@@ -40,4 +40,4 @@ class PaidPlayer:
             print('error: you are not authorized to create a character')
         
 
-member1 = PaidPlayer('Jaque', 'swordsman')
+member1 = PaidPlayer('Jaque', 'swordsman', 43)
