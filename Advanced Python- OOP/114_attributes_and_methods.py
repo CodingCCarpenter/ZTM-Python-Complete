@@ -7,7 +7,7 @@ class PlayerCharacter:
 
     # custom method that we created
     def battle_cry(self):
-        print('YAAAAAAAAAAARG!!!!')
+        print(f'I am {self.name}!!! YAAAAAAAAAAARG!!!!')
         return 'done'
 
     # this is a class object attribute, which is NOT dynamic
@@ -40,3 +40,4 @@ class PaidPlayer:
             print('error: you are not authorized to create a character')
         
 
+member1 = PaidPlayer('Jaque', 'swordsman')
