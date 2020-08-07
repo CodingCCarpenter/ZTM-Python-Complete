@@ -31,8 +31,10 @@ class Thai_chi(Cat):
         return f'{sounds}'
 
 #2 Create a list of all of the pets (create 3 cat instances from the above)
-my_cats = []
+my_cats = [Simon('Simon', 3), Sally('Sally', 2), Thai_chi('Thai Chi', 2)]
 
 #3 Instantiate the Pet class with all your cats use variable my_pets
+my_pets = Pets(my_cats)
 
 #4 Output all of the cats walking using the my_pets instance
+print(my_pets.walk())
