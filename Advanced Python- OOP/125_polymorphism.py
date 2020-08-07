@@ -8,11 +8,9 @@
 
 # starting with same code from 123_inheritance.py
 class User():
-    role = ''
-    health = 20
-
     def __init__(self, name):
         self.name = name
+        self.health = 20
 
     def sign_in(self):
         print(f'{self.name} is logged in')
@@ -37,8 +35,13 @@ class Archer(User):
     role = 'archer'
 
     def _crack_shot(self, target):
-        target.health = target.health - 5
+        target.health = target.health - 3
         print('The archer never misses! You take 5 damage!')
+
+    def field_medic(self):
+        if self.health < 15:
+            self.health += 5
+            print('Thank goodness for field medics! Heal 5 points!')
 
 wizard1 = Wizard('Dumbledore')
 
