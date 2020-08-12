@@ -9,3 +9,7 @@ def multiply_by2(li):
     return new_list
         
 print(multiply_by2([1,2,3]))
+
+# it is important to note that the pure functions are more of a guideline
+# than a rule. It's impossible to use them all the time. Try to keep as many 
+# functions pure as possible
