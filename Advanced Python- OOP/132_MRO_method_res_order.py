@@ -34,3 +34,28 @@ B     C
 
 # the below prints the full method resolution order for D
 print(D.mro())
+
+# dunder method version of the same thing
+print(D.__mro__)
+
+class X:
+    pass
+class Y:
+    pass
+class Z:
+    pass
+
+class E(X, Y):
+    pass
+class F(Y, Z):
+    pass
+class M(F, E, Z):
+    pass
+
+print(M.mro())
+
+"""
+prints:
+
+[<class '__main__.M'>, <class '__main__.F'>, <class '__main__.E'>, <class '__main__.X'>, <class '__main__.Y'>, <class '__main__.Z'>, <class 'object'>]
+"""
