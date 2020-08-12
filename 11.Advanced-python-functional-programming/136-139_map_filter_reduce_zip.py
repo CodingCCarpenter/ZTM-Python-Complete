@@ -1,3 +1,5 @@
+from functools import reduce
+
 # MAP()
 
 def multiply_by_2(item):
@@ -13,11 +15,24 @@ def greet_user(user):
 
 print(list(map(greet_user, users)))
 
-# FILTER
+# FILTER()
 
 my_list = [1,2,3]
+
 
 def grab_odds(item):
     return item % 2 != 0
 
 print(list(filter(grab_odds, my_list)))
+
+# ZIP()
+your_list = [10, 20, 30]
+
+print(list(zip(my_list, your_list)))
+
+# FILTER
+# you must from functools import reduce
+def accumulator(acc,item):
+    return acc + item
+
+print(reduce(accumulator, my_list, 0))
