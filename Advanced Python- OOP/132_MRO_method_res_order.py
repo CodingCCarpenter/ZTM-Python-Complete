@@ -14,4 +14,23 @@ class C(A):
 class D(B, C):
     pass
 
-print(D.num)
+print(D.num) # this prints 1 since the value of A is overwritten by the value of C
+
+
+"""
+visual representation of the classes relationships
+
+A is a parent of both B and C, and D inherits from or is a child of both B and C
+
+   A
+  / \
+ /   \
+B     C
+ \   /
+  \ / 
+   D
+
+"""
+
+# the below prints the full method resolution order for D
+print(D.mro())
