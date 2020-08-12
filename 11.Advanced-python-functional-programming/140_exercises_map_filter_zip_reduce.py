@@ -3,6 +3,10 @@ from functools import reduce
 #1 Capitalize all of the pet names and print the list
 my_pets = ['sisi', 'bibi', 'titi', 'carla']
 
+def capitalize_string(item):
+    return item.upper()
+
+print(list(map(capitalize_string, my_pets)))
 
 #2 Zip the 2 lists into a list of tuples, but sort the numbers from lowest to highest.
 my_strings = ['a', 'b', 'c', 'd', 'e']
