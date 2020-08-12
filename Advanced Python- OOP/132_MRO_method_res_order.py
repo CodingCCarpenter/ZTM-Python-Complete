@@ -13,3 +13,5 @@ class C(A):
 
 class D(B, C):
     pass
+
+print(D.num)
