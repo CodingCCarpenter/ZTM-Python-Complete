@@ -1,4 +1,6 @@
 # MRO - Method Resolution Order
+# a rule that determines which method to run when
+
 
 class A:
     num = 10
