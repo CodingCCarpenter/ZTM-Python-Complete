@@ -8,13 +8,14 @@ total = 100
 def some_func():
     # functional scope - not available outside of some_func
     counter = 100
+    return counter
 
 # we have access to total
 print (total)
 
 # but we do not have access to counter - will throw error
 # uncomment line 17 and run to view error
-# print(counter) 
+#print(counter) 
 
 """
 functional scope only applies when we define a function. 
